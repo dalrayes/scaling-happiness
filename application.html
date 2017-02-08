@@ -47,18 +47,19 @@
 <section>
 	<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
 		<form id="contact-form" action="//formspree.io/dalrayes@gmail.com" method="POST">
-			<label for="name">Name</label>
+			<label for="name">Full Name</label>
 			<input class="form-control" type="text" name="name" required
 			placeholder="Name">
 
 			<label for="email">Email</label>
 			<input class="form-control" type="email" name="_replyto"
-			required placeholder="email@address.com">
+			required placeholder="Your email">
 
 			<label for="message">Message</label>
 			<textarea class="form-control" name="message" placeholder="Message"
 			required rows="5"></textarea>
 			 <input type="submit" value="Send">
+			 <input type="hidden" name="_next" value="/page-confirmation.html" />
 		</form>
 	</div>
 </section>
