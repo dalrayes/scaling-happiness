@@ -47,15 +47,40 @@
 <section>
 	<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
 		<form id="contact-form" action="//formspree.io/dalrayes@gmail.com" method="POST">
-			<label for="name">Full Name</label>
+			<label for="name">First Name</label>
 			<input class="form-control" type="text" name="name" required
-			placeholder="Name">
+			placeholder="First Name">
+
+			<label for="name">Last Name</label>
+			<input class="form-control" type="text" name="name" required
+			placeholder="Last Name">
 
 			<label for="email">Email</label>
 			<input class="form-control" type="email" name="_replyto"
 			required placeholder="Your email">
 
-			<label for="message">Message</label>
+			<label for="source">How did you hear about us?</label>
+			<select name="source" required>
+				<option selected disabled>Choose here</option>
+				<option value="instagram">Instagram</option>
+				<option value="website">Website</option>
+				<option value="friend">Friend</option>
+				<option value="twitter">Twitter</option>
+				<option value="other">Other</option>
+			</select>
+
+			<label for="city">Where do you currently live? (city, country)</label>
+			<input class="form-control" type="text" name="city"
+			required placeholder="Your city, country">
+
+			<label for="cohort">Cohort preferences?</label><br>
+				<input type="radio" name="cohort" value="March 1"> March 1 - 15<br>
+				<input type="radio" name="cohort" value="March 2"> March 2 - 15<br>
+				<input type="radio" name="cohort" value="March 3"> March 3 - 15<br>
+			</select>
+
+
+			<label for="heard">Message</label>
 			<textarea class="form-control" name="message" placeholder="Message"
 			required rows="5"></textarea>
 			 <input type="submit" value="Send">
