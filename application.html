@@ -47,13 +47,14 @@
 			<div class="feature boxed bg-secondary">
 				<h4 class="uppercase mt48 mt-xs-0">Apply to Create</h4>
 				<form id="contact-form" action="//formspree.io/dalrayes@gmail.com" method="POST">
-					<input class="form-control" type="text" name="name" required placeholder="First Name">
+					<input type="hidden" name="_subject" value="New applicant" />
+					<input class="form-control" type="text" name="First name" required placeholder="First Name">
 
-					<input class="form-control" type="text" name="name" required placeholder="Last Name">
+					<input class="form-control" type="text" name="Last name" required placeholder="Last Name">
 
 					<div class="select-option">
                       <i class="ti-angle-down"></i>
-						<select name="gender" required>
+						<select name="Gender" required>
 							<option selected disabled>Gender</option>
 							<option value="Female">Female</option>
 							<option value="Male">Male</option>
@@ -63,18 +64,18 @@
 					<input class="form-control" type="email" name="_replyto" required placeholder="Your email">
 
 					<label for="city">Where do you currently live? (city, country)</label>
-					<input class="form-control" type="text" name="city" required placeholder="Your city, country">
+					<input class="form-control" type="text" name="Location" required placeholder="Your city, country">
 
 					<label for="cohort">Cohort preferences?</label>
 
-					<p><input type="radio" name="cohort" value="March 1" required> March 1 - 15 (Closing Soon. Apply Now)</p>
+					<p><input type="radio" name="cohort starting" value="March 1" required> March 1 - 15 (Closing Soon. Apply Now)</p>
 
-					<p><input type="radio" name="cohort" value="March 2"> March 2 - 15</p>
+					<p><input type="radio" name="cohort starting" value="March 2"> March 2 - 15</p>
 
-					<p><input type="radio" name="cohort" value="March 3"> March 3 - 15</p>
+					<p><input type="radio" name="cohort starting" value="March 3"> March 3 - 15</p>
 
 					<label for="LinkedIn">LinkedIn URL</label>
-					<input class="form-control" type="url" name="linkedin" required placeholder="Enter your LinkedIn URL">
+					<input class="form-control" type="url" name="Linkedin" required placeholder="Enter your LinkedIn URL">
 
 					<label for="applicant-links">Other Links (GitHub, Blog, Twitter, Instagram)</label>
 					<textarea class="form-control" name="applicant-links" placeholder="Have a website or blog? Twitter or Instagram? Share any links that will help us learn more about you."required rows="3"></textarea>
@@ -94,7 +95,7 @@
 					<label for="stage">What are your plans after completing the program?</label>
 					<div class="select-option">
                     	<i class="ti-angle-down"></i>
-						<select name="plans-after-grad" required>
+						<select name="plans after grad" required>
 							<option selected disabled>Choose here</option>
 							<option value="a"> option a</option>
 							<option value="b">option b</option>
@@ -107,7 +108,7 @@
 					<label for="source">How do you prefer to pay for the program?</label>
 					<div class="select-option">
                     	<i class="ti-angle-down"></i>
-						<select name="payment" required>
+						<select name="Payment-preference" required>
 							<option selected disabled>Select an option</option>
 							<option value="1"> option 1</option>
 							<option value="2">option 2</option>
@@ -118,14 +119,14 @@
 
 
 					<label for="applicant-background">If you already have some programming background - tell us a little bit more about what you have done (Tutorials, classes, projects/apps)</label>
-					<textarea class="form-control" name="applicant-links"
+					<textarea class="form-control" name="applicant-background"
 					 rows="3"></textarea>
 
 
 					<label for="referral-source">How did you hear about us?</label>
 					<div class="select-option">
                     	<i class="ti-angle-down"></i>
-						<select name="source" required>
+						<select name="referral-source" required>
 							<option selected disabled>Select an option</option>
 							<option value="instagram">Instagram</option>
 							<option value="Online search">Online Search</option>
@@ -134,6 +135,7 @@
 							<option value="other">Other</option>
 						</select>
 					</div>
+					<input type="text" name="_gotcha" style="display:none" />
 
 
 					<input type="submit" value="Send">
