@@ -31,7 +31,7 @@
 				<div class="module-group right">
 					<div class="module left">
 						<ul class="menu">
-							<li><a href="#">Home</a></li>
+							<li><a href="./home.html">Home</a></li>
 							<!-- <li><a href="#">Program</a></li> -->
 							<!-- <li><a href="#">Location</a></li> -->
 <!-- 							<li><a href="#">Pricing</a></li>
@@ -46,6 +46,7 @@
 		<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
 			<div class="feature boxed bg-secondary">
 				<h4 class="uppercase mt48 mt-xs-0">Apply to Create</h4>
+
 				<form id="contact-form" action="//formspree.io/dalrayes@gmail.com" method="POST">
 					<input type="hidden" name="_subject" value="New applicant" />
 					<input class="form-control" type="text" name="First name" required placeholder="First Name">
@@ -66,25 +67,27 @@
 					<label for="city">Where do you currently live? (city, country)</label>
 					<input class="form-control" type="text" name="Location" required placeholder="Your city, country">
 
-					<label for="cohort">Cohort preferences?</label>
+					<label for="cohort">Select the cohort you would like to apply for</label>
 
-					<p><input type="radio" name="cohort starting" value="March 1" required> March 1 - 15 (Closing Soon. Apply Now)</p>
+					<p><input type="radio" name="Cohort starting" value="April 29" required>&nbsp; April 29 - July 26 &nbsp; (Closing Soon. Apply Now)</p>
 
-					<p><input type="radio" name="cohort starting" value="March 2"> March 2 - 15</p>
+					<p><input type="radio" name="Cohort starting" value="July 30"> &nbsp; July 30 - Oct 26</p>
 
-					<p><input type="radio" name="cohort starting" value="March 3"> March 3 - 15</p>
+					<p><input type="radio" name="Cohort starting" value="Oct 29">&nbsp; Oct 29 - Jan 25, 2018</p>
+
+					<p><input type="radio" name="Cohort starting" value="Future"> Future cohort &nbsp; (Early 2018)</p>
 
 					<label for="LinkedIn">LinkedIn URL</label>
-					<input class="form-control" type="url" name="Linkedin" required placeholder="Enter your LinkedIn URL">
+					<input class="form-control" type="text" name="Linkedin" required placeholder="Enter your LinkedIn URL">
 
 					<label for="applicant-links">Other Links (GitHub, Blog, Twitter, Instagram)</label>
-					<textarea class="form-control" name="applicant-links" placeholder="Have a website or blog? Twitter or Instagram? Share any links that will help us learn more about you."required rows="3"></textarea>
+					<textarea class="form-control" name="Applicant-links" placeholder="Have a website or blog? Twitter or Instagram? Share any links that will help us learn more about you." required rows="4"></textarea>
 
 					<label for="stage">Where are you in your journey learning to code?</label>
 					<div class="select-option">
                       <i class="ti-angle-down"></i>
-						<select name="coding-level" required>
-							<option selected disabled>Choose here</option>
+						<select name="Coding-level" required>
+							<option selected disabled>Select an option</option>
 							<option value="absolute-beginner">Absolute Beginner </option>
 							<option value="beginner">Beginner - I've taken basic courses and know a few concepts</option>
 							<option value="intermediate">Intermediate - I've programmed a few apps on my own</option>
@@ -95,38 +98,52 @@
 					<label for="stage">What are your plans after completing the program?</label>
 					<div class="select-option">
                     	<i class="ti-angle-down"></i>
-						<select name="plans after grad" required>
-							<option selected disabled>Choose here</option>
-							<option value="a"> option a</option>
-							<option value="b">option b</option>
-							<option value="c">option c</option>
-							<option value="d">option d</option>
+						<select name="Plans after grad" required>
+							<option selected disabled>Select an option</option>
+							<option value="software developer">Software developer</option>
+							<option value="entrepreneur">Start my own company/Entrepreneur</option>
+							<option value="UI/UX">UI/UX designer</option>
+							<option value="Product Mgr">Product Manager</option>
+							<option value="Frontend dev">Front-end developer</option>
+							<option value="Not sure">I am not sure yet</option>
+							<option value="Other">Other</option>
 						</select>
 					</div>
 
 
-					<label for="source">How do you prefer to pay for the program?</label>
+					<label for="source">How will you be paying your tuition?</label>
 					<div class="select-option">
                     	<i class="ti-angle-down"></i>
-						<select name="Payment-preference" required>
+						<select name="Payment preference" required>
 							<option selected disabled>Select an option</option>
-							<option value="1"> option 1</option>
-							<option value="2">option 2</option>
-							<option value="3">option 3</option>
-							<option value="4">option 4</option>
+							<option value="1">I am able to pay full tuition</option>
+							<option value="2">I will require a partial financing option</option>
+							<option value="3">I will require a full financing option</option>
+							<option value="3">I am not sure yet</option>
+						</select>
+					</div>
+
+					<label for="source">Are you interested in applying for a scholarship?</label>
+					<div class="select-option">
+                    	<i class="ti-angle-down"></i>
+						<select name="Scholarship preference" required>
+							<option selected disabled>Select an option</option>
+							<option value="Yes&50">Yes, I am interested in 50% scholarship</option>
+							<option value="Yes&100">Yes, I am interested in 100% scholarship</option>
+							<option value="No">No, I will not be applying for a scholarship</option>
 						</select>
 					</div>
 
 
-					<label for="applicant-background">If you already have some programming background - tell us a little bit more about what you have done (Tutorials, classes, projects/apps)</label>
+					<label for="Applicant background">If you already have some programming background - tell us a little bit more about what you have done (Tutorials, classes, projects/apps)</label>
 					<textarea class="form-control" name="applicant-background"
-					 rows="3"></textarea>
+					 rows="4"></textarea>
 
 
 					<label for="referral-source">How did you hear about us?</label>
 					<div class="select-option">
                     	<i class="ti-angle-down"></i>
-						<select name="referral-source" required>
+						<select name="Referral source" required>
 							<option selected disabled>Select an option</option>
 							<option value="instagram">Instagram</option>
 							<option value="Online search">Online Search</option>
@@ -138,7 +155,7 @@
 					<input type="text" name="_gotcha" style="display:none" />
 
 
-					<input type="submit" value="Send">
+					<input type="submit" value="Submit Application">
 					<input type="hidden" name="_next" value="/page-confirmation.html" />
 			</form>
 		</div>
