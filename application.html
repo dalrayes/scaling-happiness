@@ -1,95 +1,147 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
-		<link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="css/theme-chipotle.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-		<link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet" type="text/css">
-		<link href="css/font-opensans.css" rel="stylesheet" type="text/css">
-	</head>
-	<body class="btn-rounded">
-		<div class="nav-container">
-			<nav>
-				<div class="nav-bar">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/theme-chipotle.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet" type="text/css">
+	<link href="css/font-opensans.css" rel="stylesheet" type="text/css">
+</head>
+<body class="btn-rounded">
+	<div class="nav-container">
+		<nav>
+			<div class="nav-bar">
+				<div class="module left">
+					<a href="home.html">
+						<img class="logo logo-light" alt="Foundry" src="img/logo-light.png">
+						<img class="logo logo-dark" alt="Foundry" src="img/logo-dark.png">
+					</a>
+				</div>
+
+				<div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+					<i class="ti-menu"></i>
+				</div>
+
+				<div class="module-group right">
 					<div class="module left">
-						<a href="home.html">
-							<img class="logo logo-light" alt="Foundry" src="img/logo-light.png">
-							<img class="logo logo-dark" alt="Foundry" src="img/logo-dark.png">
-						</a>
+						<ul class="menu">
+							<li><a href="#">Home</a></li>
+							<!-- <li><a href="#">Program</a></li> -->
+							<!-- <li><a href="#">Location</a></li> -->
+<!-- 							<li><a href="#">Pricing</a></li>
+ -->					</ul>
 					</div>
-					<div class="module widget-handle mobile-toggle right visible-sm visible-xs">
-						<i class="ti-menu"></i>
-					</div>
-					<div class="module-group right">
-						<div class="module left">
-							<ul class="menu">
-								<li>
-									<a href="#">Home</a>
-								</li><li>
-								<a href="#">program</a>
-							</li><li>
-							<a href="#">location</a>
-						</li><li>
-						<a href="#">pricing</a>
-					</li>
-				</ul>
+				</div>
 			</div>
+		</nav>
+	</div>
+
+	<section>
+		<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+			<div class="feature boxed bg-secondary">
+				<h4 class="uppercase mt48 mt-xs-0">Apply to Create</h4>
+				<form id="contact-form" action="//formspree.io/dalrayes@gmail.com" method="POST">
+					<input class="form-control" type="text" name="name" required placeholder="First Name">
+
+					<input class="form-control" type="text" name="name" required placeholder="Last Name">
+
+					<div class="select-option">
+                      <i class="ti-angle-down"></i>
+						<select name="source" required>
+							<option selected disabled>Gender</option>
+							<option value="Female">Female</option>
+							<option value="Male">Male</option>
+						</select>
+					</div>
+
+					<input class="form-control" type="email" name="_replyto" required placeholder="Your email">
+
+					<label for="city">Where do you currently live? (city, country)</label>
+					<input class="form-control" type="text" name="city" required placeholder="Your city, country">
+
+					<label for="cohort">Cohort preferences?</label>
+
+					<p><input type="radio" name="cohort" value="March 1" required> March 1 - 15 (Closing Soon. Apply Now)</p>
+
+					<p><input type="radio" name="cohort" value="March 2"> March 2 - 15</p>
+
+					<p><input type="radio" name="cohort" value="March 3"> March 3 - 15</p>
+
+					<label for="LinkedIn">LinkedIn URL</label>
+					<input class="form-control" type="url" name="linkedin" required placeholder="Enter your LinkedIn URL">
+
+					<label for="applicant-links">Other Links (GitHub, Blog, Twitter, Instagram)</label>
+					<textarea class="form-control" name="applicant-links" placeholder="Have a website or blog? Twitter or Instagram? Share any links that will help us learn more about you."required rows="3"></textarea>
+
+					<label for="stage">Where are you in your journey learning to code?</label>
+					<div class="select-option">
+                      <i class="ti-angle-down"></i>
+						<select name="source" required>
+							<option selected disabled>Choose here</option>
+							<option value="absolute-beginner">Absolute Beginner </option>
+							<option value="beginner">Beginner - I've taken basic courses and know a few concepts</option>
+							<option value="intermediate">Intermediate - I've programmed a few apps on my own</option>
+							<option value="Strong">Strong - I'm a computer science/ computer engineering major</option>
+						</select>
+					</div>
+
+					<label for="stage">What are your plans after completing the program?</label>
+					<div class="select-option">
+                    	<i class="ti-angle-down"></i>
+						<select name="source" required>
+							<option selected disabled>Choose here</option>
+							<option value="a"> option a</option>
+							<option value="b">option b</option>
+							<option value="c">option c</option>
+							<option value="d">option d</option>
+						</select>
+					</div>
+
+
+					<label for="source">How do you prefer to pay for the program?</label>
+					<div class="select-option">
+                    	<i class="ti-angle-down"></i>
+						<select name="source" required>
+							<option selected disabled>Select an option</option>
+							<option value="1"> option 1</option>
+							<option value="2">option 2</option>
+							<option value="3">option 3</option>
+							<option value="4">option 4</option>
+						</select>
+					</div>
+
+
+					<label for="applicant-links">If you already have some programming background - tell us a little bit more about what you have done (Tutorials, classes, projects/apps)</label>
+					<textarea class="form-control" name="applicant-links"
+					 rows="3"></textarea>
+
+
+					<label for="source">How did you hear about us?</label>
+					<div class="select-option">
+                    	<i class="ti-angle-down"></i>
+						<select name="source" required>
+							<option selected disabled>Select an option</option>
+							<option value="instagram">Instagram</option>
+							<option value="Online search">Online Search</option>
+							<option value="friend">Friend/family member</option>
+							<option value="twitter">Twitter</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+
+
+					<input type="submit" value="Send">
+					<input type="hidden" name="_next" value="/page-confirmation.html" />
+			</form>
 		</div>
 	</div>
-</nav>
-
-<section>
-	<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-		<form id="contact-form" action="//formspree.io/dalrayes@gmail.com" method="POST">
-			<label for="name">First Name</label>
-			<input class="form-control" type="text" name="name" required
-			placeholder="First Name">
-
-			<label for="name">Last Name</label>
-			<input class="form-control" type="text" name="name" required
-			placeholder="Last Name">
-
-			<label for="email">Email</label>
-			<input class="form-control" type="email" name="_replyto"
-			required placeholder="Your email">
-
-			<label for="source">How did you hear about us?</label>
-			<select name="source" required>
-				<option selected disabled>Choose here</option>
-				<option value="instagram">Instagram</option>
-				<option value="website">Website</option>
-				<option value="friend">Friend</option>
-				<option value="twitter">Twitter</option>
-				<option value="other">Other</option>
-			</select>
-
-			<label for="city">Where do you currently live? (city, country)</label>
-			<input class="form-control" type="text" name="city"
-			required placeholder="Your city, country">
-
-			<label for="cohort">Cohort preferences?</label><br>
-				<input type="radio" name="cohort" value="March 1"> March 1 - 15<br>
-				<input type="radio" name="cohort" value="March 2"> March 2 - 15<br>
-				<input type="radio" name="cohort" value="March 3"> March 3 - 15<br>
-			</select>
-
-
-			<label for="heard">Message</label>
-			<textarea class="form-control" name="message" placeholder="Message"
-			required rows="5"></textarea>
-			 <input type="submit" value="Send">
-			 <input type="hidden" name="_next" value="/page-confirmation.html" />
-		</form>
-	</div>
 </section>
-
-
 <footer class="footer-2 bg-dark pt96 pt-xs-40">
 	<div class="container">
 		<div class="row mb64 mb-xs-24">
