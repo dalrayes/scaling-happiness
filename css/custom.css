@@ -16,3 +16,16 @@
 .image-bg h6 {
   color:#363636;
 }*/
+
+.bg-primary {
+  background: white;
+}
+
+.color-body {
+  color: #4a4a4a;
+}
+
+.accordion-2 .title {
+   padding: 2px 0;
+
+}

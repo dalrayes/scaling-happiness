@@ -545,7 +545,7 @@ ul.lead li {
 }
 /*!---------- 4. COLOURS ----------*/
 .bg-primary {
-  background: #f9ad19 !important;
+  background: #f9ad19;
 }
 .bg-secondary {
   background: #f8f8f8;
@@ -692,7 +692,7 @@ footer.bg-dark li,
   display: none;
 }
 .background-multiply .background-image-holder {
-  background-color: #f9ad19 !important;
+  /*background-color: #f9ad19 !important;*/
   background-blend-mode: multiply;
 }
 .background-image-holder.fadeIn {
